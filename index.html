@@ -84,12 +84,7 @@
         </div>
         </section>
            <div>
-               <section style="text-align: center;">
-    
-          <section class="bg2" id="infomation" style="position:relative text-align : center;">
-
-				<h1>CONTACT</h1>
-                <style>
+             <style>
         body {
             display: flex;
             justify-content: center;
@@ -111,59 +106,62 @@
     <section class="bg2" id="infomation">
         <!-- Your form content goes here -->
     </section>
-				<form action="https://formspree.io/f/mwkdbgqn" method="POST">
-					<table class="ta1">
-						
-						<tr>
-				        <th>Name※</th>
-							<td><input type="text" name="お名前" size="30" class="ws" required></td>
-						</tr>
-						<!-- Error message for お名前 -->
-						<tr class="error-message" style="display: none;">
-							<td></td>
-							<td class="error-text">お名前を入力してください。</td>
-						</tr>
-						
-						
-						<tr>
-							<th>Mail Address※</th>
-							<td><input type="email" name="メールアドレス" size="30" class="ws" required placeholder="例：yourname@example.com"></td>
-						</tr>
-						<!-- Error message for メールアドレス -->
-						<tr class="error-message" style="display: none;">
-							<td></td>
-							<td class="error-text">メールアドレスを入力してください。</td>
-						</tr>
-						<tr>
-				        <th>Mobile Number ※</th>
-							<td><input type="tel" name="電話番号" size="30" class="ws" required pattern="[0-9\-]*" placeholder="例：123-1234-1234"></td>
-						</tr>
-						<!-- Error message for 電話番号 -->
-						<tr class="error-message" style="display: none;">
-							<td></td>
-							<td class="error-text">電話番号を正しい形式で入力してください。</td>
-						</tr>
-						<tr>
-							<th>Contact info※</th>
-							<td><textarea name="お問い合わせ詳細" cols="30" rows="10" class="wl" required placeholder="最小50文字"></textarea></td>
-						</tr>
-						<!-- Error message for お問い合わせ詳細 -->
-						<tr class="error-message" style="display: none;">
-							<td></td>
-							<td class="error-text">お問い合わせ詳細を入力してください。</td>
-						</tr>
-					</table>
-			
-					<p class="btn">
-						<input type="submit" value="内容を確認する">
-					</p>
+  <style>
+				.required-symbol {
+				  color: rgb(250, 12, 12);
+				}
+			  </style>
+			  
+			  <section class="bg2" id="infomation" style="position:relative;">
+				<h1>お問い合わせ</h1>
+				<form action="https://formspree.io/f/mwkdbgqn"  method="POST">
+				  <table class="ta1">
+					
+					<tr>
+					  <th>お名前<span class="required-symbol">※</span></th>
+					  <td><input type="text" name="お名前" size="30" class="ws" required></td>
+					</tr>
+					<!-- Error message for お名前 -->
+					<tr class="error-message" style="display: none;">
+					  <td></td>
+					<tr>
+					 
+					
+					
+					<tr>
+					  <th>メールアドレス<span class="required-symbol">※</span></th>
+					  <td><input type="email" name="メールアドレス" size="30" class="ws" required placeholder="例：yourname@example.com"></td>
+					</tr>
+					<!-- Error message for メールアドレス -->
+					<tr class="error-message" style="display: none;">
+					  <td></td>
+					  <td class="error-text">メールアドレスを入力してください。</td>
+					</tr>
+					<tr>
+					  <th>電話番号<span class="required-symbol">※</span></th>
+					  <td><input type="tel" name="電話番号" size="30" class="ws" required pattern="[0-9\-]*" placeholder="例：123-1234-1234"></td>
+					</tr>
+					<!-- Error message for 電話番号 -->
+					<tr class="error-message" style="display: none;">
+					  <td></td>
+					  <td class="error-text">電話番号を正しい形式で入力してください。</td>
+					</tr>
+					<tr>
+					  <th>お問い合わせ詳細<span class="required-symbol">※</span></th>
+					  <td><textarea name="お問い合わせ詳細" cols="30" rows="10" class="wl" required placeholder="最小50文字"></textarea></td>
+					</tr>
+					<!-- Error message for お問い合わせ詳細 -->
+					<tr class="error-message" style="display: none;">
+					  <td></td>
+					  <td class="error-text">お問い合わせ詳細を入力してください。</td>
+					</tr>
+				  </table>
+			  
+				  <p class="btn">
+					<input type="submit" value="内容を確認する">
+				  </p>
 				</form>
-			
-             </div>
-             </body>
-            </section>
-          
-            
+			  </section>
              
 </section>
                   
