@@ -82,22 +82,70 @@
            <img src="./images/pictures/project.png" alt="" srcset="">
         </div>
         
-    </section>
-    <section id="section-contact">
-        <h1>Contact <span class="special-color">With Me</span></h1>
-        <div class="form-area">
-            <form>
-                <label>Your name:</label><br>
-                <input class="input-form" name="name"><br>
-                <label>Your Email:</label><br>
-                <input class="input-form" name="email"><br>
-                <label>Your Message:</label><br>
-                <input class="input-form-text-area" name="textarea"><br><br>
-                <input class="body-content-button" type="button" value="Send">
-            </form>
-            
-        </div>
-    </section>
+    <Contact information kivabe jug kore akta website e :
+
+
+1/ prothome https://formspree.io ei address e account khulbo then Formspree endpoint id ta nicher code e add korbo:
+<section class="bg2" id="infomation" style="position:relative;">
+
+				<h1>お問い合わせ</h1>
+				<form action="https://formspree.io/f/mwkdbgqn" method="POST">
+					<table class="ta1">
+						<tr>
+							<th>会社名</th>
+							<td><input type="text" name="会社名" size="30" class="ws"></td>
+						</tr>
+						<tr>
+							<th>お名前※</th>
+							<td><input type="text" name="お名前" size="30" class="ws" required></td>
+						</tr>
+						<!-- Error message for お名前 -->
+						<tr class="error-message" style="display: none;">
+							<td></td>
+							<td class="error-text">お名前を入力してください。</td>
+						</tr>
+						<tr>
+							<th>部署</th>
+							<td><input type="text" name="部署" size="30" class="ws"></td>
+						</tr>
+						<tr>
+							<th>職務</th>
+							<td><input type="text" name="職務" size="30" class="ws"></td>
+						</tr>
+						<tr>
+							<th>メールアドレス※</th>
+							<td><input type="email" name="メールアドレス" size="30" class="ws" required placeholder="例：yourname@example.com"></td>
+						</tr>
+						<!-- Error message for メールアドレス -->
+						<tr class="error-message" style="display: none;">
+							<td></td>
+							<td class="error-text">メールアドレスを入力してください。</td>
+						</tr>
+						<tr>
+							<th>電話番号※</th>
+							<td><input type="tel" name="電話番号" size="30" class="ws" required pattern="[0-9\-]*" placeholder="例：123-1234-1234"></td>
+						</tr>
+						<!-- Error message for 電話番号 -->
+						<tr class="error-message" style="display: none;">
+							<td></td>
+							<td class="error-text">電話番号を正しい形式で入力してください。</td>
+						</tr>
+						<tr>
+							<th>お問い合わせ詳細※</th>
+							<td><textarea name="お問い合わせ詳細" cols="30" rows="10" class="wl" required placeholder="最小50文字"></textarea></td>
+						</tr>
+						<!-- Error message for お問い合わせ詳細 -->
+						<tr class="error-message" style="display: none;">
+							<td></td>
+							<td class="error-text">お問い合わせ詳細を入力してください。</td>
+						</tr>
+					</table>
+			
+					<p class="btn">
+						<input type="submit" value="内容を確認する">
+					</p>
+				</form>
+			</section>
     <footer>
         <div>
             <h3>Mission <span class="special-color">2022</span></h3>
